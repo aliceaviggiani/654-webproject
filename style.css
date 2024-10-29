@@ -1,0 +1,109 @@
+@font-face {
+    font-family: 'FaktMono';
+    src: url(fonts/FaktMono-Normal.woff2) format('woff2');
+}
+
+#body {
+    font-family: FaktMono;
+    text-align: left;
+    color: blue;
+}
+
+h1 {
+    font-family: FaktMono;
+    font-weight: 100;
+    font-size: 48px;
+    line-height: 24px;
+    text-align: left;
+    color: red;
+    height: fit-content;
+}
+
+h2 {
+    font-family: FaktMono;
+    font-weight: 100;
+    font-size: 48px;
+    line-height: 12px;
+    text-align: left;
+    color: blueviolet;
+    height: fit-content;
+}
+
+p {
+    font-family: FaktMono;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: left;
+    color: blue;
+    height: fit-content;
+}
+
+li {
+    font-family: FaktMono;
+    font-weight: 100;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: left;
+    color: blue;
+    list-style-type: circle;
+    height: fit-content;
+}
+
+a {
+    font-family: FaktMono;
+    font-weight: 100;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: left;
+    color: violet;
+    height: fit-content;
+}
+
+#header {
+    background: white;
+    margin-top: 24px;
+    margin-left: 24px;
+}
+
+.grid-container{
+    display: grid;
+    margin-top: 72px;
+    margin-left: 24px;
+    margin-right: 24px;
+    grid-template-columns: 1fr 1fr 2fr;
+    gap: 24px;
+}
+
+.card{
+    padding: 12px;
+    background-color: lightcyan;
+}
+
+#leftnav {
+    margin-top: 0px;
+    margin-left: 0px;
+    padding: 6px 12px;
+    position: static;
+    outline: 1px solid red;
+}
+
+#centernav {
+    margin-top: 0px;
+    padding: 6px 12px;
+    position: static;
+    outline: 1px solid red;
+}
+
+#rightnav {
+    margin-top: 0px;
+    padding: 6px 12px;
+    position: static;
+    outline: 1px solid red;
+}
+
+#footer {
+    margin-top: 24px;
+    margin-left: 24px;
+    padding: 6px 12px;
+    position: static;
+}
