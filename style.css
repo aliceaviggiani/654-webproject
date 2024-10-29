@@ -3,59 +3,52 @@
     src: url(fonts/FaktMono-Normal.woff2) format('woff2');
 }
 
-#body {
+body {
     font-family: FaktMono;
     text-align: left;
-    color: blue;
+    color: darkviolet;
+    background-color: white;
 }
 
 h1 {
-    font-family: FaktMono;
     font-weight: 100;
     font-size: 48px;
     line-height: 24px;
-    text-align: left;
     color: red;
     height: fit-content;
 }
 
 h2 {
-    font-family: FaktMono;
     font-weight: 100;
     font-size: 48px;
     line-height: 12px;
-    text-align: left;
-    color: blueviolet;
+    color: pink;
     height: fit-content;
 }
 
 p {
-    font-family: FaktMono;
-    font-size: 18px;
+    font-weight: 100;
+    font-size: 16px;
     line-height: 24px;
-    text-align: left;
-    color: blue;
+    padding-bottom: 0px;
+    color: darkviolet;
     height: fit-content;
 }
 
 li {
-    font-family: FaktMono;
     font-weight: 100;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 24px;
-    text-align: left;
-    color: blue;
+    color: darkviolet;
     list-style-type: circle;
     height: fit-content;
 }
 
 a {
-    font-family: FaktMono;
-    font-weight: 100;
-    font-size: 18px;
+    font-weight: 400;
+    font-size: 16px;
     line-height: 24px;
-    text-align: left;
-    color: violet;
+    color: blue;
     height: fit-content;
 }
 
@@ -63,9 +56,10 @@ a {
     background: white;
     margin-top: 24px;
     margin-left: 24px;
+    a {font-size:48px; color:red; text-decoration: none;}
 }
 
-.grid-container{
+.grid-container-112 {
     display: grid;
     margin-top: 72px;
     margin-left: 24px;
@@ -74,27 +68,81 @@ a {
     gap: 24px;
 }
 
-.card{
-    padding: 12px;
-    background-color: lightcyan;
+.grid-container-121 {
+    display: grid;
+    margin-top: 72px;
+    margin-left: 24px;
+    margin-right: 24px;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 24px;
 }
 
-#leftnav {
+.card_grid {
+    padding: 12px;
+    margin-bottom: 24px;
+    background-color: lightgoldenrodyellow;
+}
+
+.table {
+    display: grid;
+    margin-top: 12px;
+    padding: 12px;
+    outline: 1px solid red;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 24px;
+}
+
+.card_table {
+    vertical-align: middle;
+}
+
+.dot {
+    vertical-align: middle;
+    align-content: center;
+    height: 25px;
+    width: 25px;
+    background-color: pink;
+    border-radius: 50%;
+    display: inline-block; 
+}
+
+.dot_empty {
+    vertical-align: middle;
+    align-content: center;
+    height: 25px;
+    width: 25px;
+    background-color: lightgoldenrodyellow;
+    outline: 1px solid pink;
+    border-radius: 50%;
+    display: inline-block; 
+}
+
+#intro {
     margin-top: 0px;
     margin-left: 0px;
+    padding: 12px 12px;
+    position: static;
+    outline: 1px solid red;
+}
+
+#intro_proj {
+    margin-top: 0px;
+    margin-left: 0px;
+    text-transform: uppercase;
     padding: 6px 12px;
     position: static;
     outline: 1px solid red;
 }
 
-#centernav {
+#contact {
     margin-top: 0px;
     padding: 6px 12px;
     position: static;
     outline: 1px solid red;
 }
 
-#rightnav {
+#projects {
     margin-top: 0px;
     padding: 6px 12px;
     position: static;
@@ -102,8 +150,8 @@ a {
 }
 
 #footer {
-    margin-top: 24px;
+    margin-bottom: 24px;
     margin-left: 24px;
-    padding: 6px 12px;
     position: static;
+    a {color:blue;}
 }
